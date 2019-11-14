@@ -65,7 +65,7 @@ public interface Planner extends Serializable {
     /**
      * The default CPU time allocated to the search in seconds.
      */
-    int DEFAULT_TIMEOUT = 600;
+    int DEFAULT_TIMEOUT = 3*60*60;
 
     /**
      * The trace level key for properties.

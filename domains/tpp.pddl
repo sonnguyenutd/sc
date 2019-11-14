@@ -58,18 +58,85 @@
  :effect (and (on-sale ?g ?m ?l1) (not (on-sale ?g ?m ?l2)) 
 	      (ready-to-load ?g ?m ?l4) (not (ready-to-load ?g ?m ?l3))))
 
-(:action act_tpp-propositional_130479
-	:parameters ( ?place_254064490 - place ?level_254064491 - level ?truck_254064487 - truck ?truck_254064489 - truck ?level_254064492 - level ?goods_254064488 - goods)
+
+(:action act_tpp-propositional_110123
+	:parameters ( ?level_452196956 - level ?market_452196958 - market ?level_452196955 - level ?goods_452196959 - goods ?truck_452196957 - truck)
 	:precondition (and 
-			(at ?truck_254064489 ?place_254064490) 
-			(loaded ?goods_254064488 ?truck_254064487 ?level_254064492) 
-			(next ?level_254064492 ?level_254064491) 
-			(stored ?goods_254064488 ?level_254064491)
+			(loaded ?goods_452196959 ?truck_452196957 ?level_452196956) 
+			(next ?level_452196956 ?level_452196955) 
+			(ready-to-load ?goods_452196959 ?market_452196958 ?level_452196956)
 	)
 	:effect (and 
-		(at ?truck_254064487 ?place_254064490) 
-		(not (loaded ?goods_254064488 ?truck_254064489 ?level_254064492)) 
-		(loaded ?goods_254064488 ?truck_254064487 ?level_254064491)
+		(loaded ?goods_452196959 ?truck_452196957 ?level_452196955) 
+		(ready-to-load ?goods_452196959 ?market_452196958 ?level_452196955) 
+		(not (stored ?goods_452196959 ?level_452196956))
+	)
+)
+
+(:action act_tpp-propositional_151805
+	:parameters ( ?level_410340240 - level ?truck_410340236 - truck ?goods_410340235 - goods ?market_410340238 - market ?goods_410340239 - goods ?level_410340237 - level)
+	:precondition (and 
+			(loaded ?goods_410340235 ?truck_410340236 ?level_410340237) 
+			(next ?level_410340237 ?level_410340240) 
+			(ready-to-load ?goods_410340239 ?market_410340238 ?level_410340237)
+	)
+	:effect (and 
+		(loaded ?goods_410340235 ?truck_410340236 ?level_410340240) 
+		(ready-to-load ?goods_410340239 ?market_410340238 ?level_410340240) 
+		(not (stored ?goods_410340235 ?level_410340237))
+	)
+)
+
+(:action act_tpp-propositional_16116
+	:parameters ( ?level_14754751 - level ?goods_14754753 - goods ?truck_14754752 - truck ?level_14754754 - level ?level_14754750 - level)
+	:precondition (and 
+			(loaded ?goods_14754753 ?truck_14754752 ?level_14754754) 
+			(next ?level_14754751 ?level_14754750)
+	)
+	:effect (and 
+		(loaded ?goods_14754753 ?truck_14754752 ?level_14754750) 
+		(loaded ?goods_14754753 ?truck_14754752 ?level_14754751) 
+		(next ?level_14754751 ?level_14754754)
+	)
+)
+
+(:action act_tpp-propositional_16223
+	:parameters ( ?truck_14754752 - truck ?level_14754750 - level ?goods_14754753 - goods ?level_14754751 - level ?level_14754754 - level)
+	:precondition (and 
+			(loaded ?goods_14754753 ?truck_14754752 ?level_14754754) 
+			(next ?level_14754751 ?level_14754750)
+	)
+	:effect (and 
+		(loaded ?goods_14754753 ?truck_14754752 ?level_14754751) 
+		(loaded ?goods_14754753 ?truck_14754752 ?level_14754750) 
+		(next ?level_14754754 ?level_14754751)
+	)
+)
+
+(:action act_tpp-propositional_151506
+	:parameters ( ?level_14754750 - level ?level_14754754 - level ?goods_14754753 - goods ?level_14754751 - level ?truck_14754752 - truck)
+	:precondition (and 
+			(loaded ?goods_14754753 ?truck_14754752 ?level_14754754) 
+			(next ?level_14754751 ?level_14754750)
+	)
+	:effect (and 
+		(loaded ?goods_14754753 ?truck_14754752 ?level_14754751) 
+		(loaded ?goods_14754753 ?truck_14754752 ?level_14754750) 
+		(next ?level_14754754 ?level_14754750)
+	)
+)
+
+(:action act_tpp-propositional_30538
+	:parameters ( ?level_9466532 - level ?level_9466533 - level ?goods_9466534 - goods ?truck_9466535 - truck)
+	:precondition (and 
+			(loaded ?goods_9466534 ?truck_9466535 ?level_9466533) 
+			(next ?level_9466532 ?level_9466533)
+	)
+	:effect (and 
+		(not (loaded ?goods_9466534 ?truck_9466535 ?level_9466532)) 
+		(next ?level_9466533 ?level_9466532) 
+		(stored ?goods_9466534 ?level_9466533) 
+		(stored ?goods_9466534 ?level_9466532)
 	)
 )
 
