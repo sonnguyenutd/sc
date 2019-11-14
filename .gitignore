@@ -8,8 +8,6 @@ build/
 
 # Generated files #
 ###################
-src/main/java/fr/uga/pddl4j/parser/lexer*
-!src/main/java/fr/uga/pddl4j/parser/lexer/Lexer.jj
 *.val
 
 # Logs and databases #
