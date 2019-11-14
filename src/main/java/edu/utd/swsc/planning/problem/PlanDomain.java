@@ -3,8 +3,8 @@ package edu.utd.swsc.planning.problem;
 import java.util.HashSet;
 import java.util.Set;
 
-import edu.utd.swsc.common.ParentService;
-import edu.utd.swsc.common.Service;
+import edu.utd.sc.common.ParentService;
+import edu.utd.sc.common.Service;
 
 public class PlanDomain {
 	Set<Action> actions;

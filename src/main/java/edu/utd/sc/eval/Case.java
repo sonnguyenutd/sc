@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-import edu.utd.swsc.common.Parameter;
+import edu.utd.sc.common.Parameter;
 import edu.utd.swsc.planning.problem.PlanProblem;
 import edu.utd.swsc.planning.problem.Prop;
 

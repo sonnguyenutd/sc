@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import edu.utd.swsc.common.Service;
+import edu.utd.sc.common.Service;
 import edu.utd.swsc.utils.Utils;
 
 public class PlanProblem {

@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
-import edu.utd.swsc.common.Parameter;
-import edu.utd.swsc.common.Service;
+import edu.utd.sc.common.Parameter;
+import edu.utd.sc.common.Service;
 
 public class CaseGenerator {
 	// 0--9--0--4

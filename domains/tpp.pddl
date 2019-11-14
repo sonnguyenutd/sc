@@ -58,36 +58,18 @@
  :effect (and (on-sale ?g ?m ?l1) (not (on-sale ?g ?m ?l2)) 
 	      (ready-to-load ?g ?m ?l4) (not (ready-to-load ?g ?m ?l3))))
 
-
-(:action act_tpp-propositional_267851
-	:parameters ( ?goods_524119774 - goods ?goods_524119776 - goods ?truck_524119775 - truck ?level_524119777 - level ?level_524119773 - level ?market_524119772 - market)
+(:action act_tpp-propositional_130479
+	:parameters ( ?place_254064490 - place ?level_254064491 - level ?truck_254064487 - truck ?truck_254064489 - truck ?level_254064492 - level ?goods_254064488 - goods)
 	:precondition (and 
-			(loaded ?goods_524119776 ?truck_524119775 ?level_524119777) 
-			(next ?level_524119777 ?level_524119773) 
-			(ready-to-load ?goods_524119774 ?market_524119772 ?level_524119773)
+			(at ?truck_254064489 ?place_254064490) 
+			(loaded ?goods_254064488 ?truck_254064487 ?level_254064492) 
+			(next ?level_254064492 ?level_254064491) 
+			(stored ?goods_254064488 ?level_254064491)
 	)
 	:effect (and 
-		(loaded ?goods_524119776 ?truck_524119775 ?level_524119773) 
-		(loaded ?goods_524119774 ?truck_524119775 ?level_524119773) 
-		(not (loaded ?goods_524119774 ?truck_524119775 ?level_524119777)) 
-		(ready-to-load ?goods_524119776 ?market_524119772 ?level_524119777) 
-		(not (stored ?goods_524119774 ?level_524119773))
-	)
-)
-
-
-(:action act_tpp-propositional_291336
-	:parameters ( ?goods_570093189 - goods ?truck_570093186 - truck ?goods_570093188 - goods ?level_570093190 - level ?level_570093185 - level ?level_570093187 - level)
-	:precondition (and 
-			(loaded ?goods_570093189 ?truck_570093186 ?level_570093190) 
-			(next ?level_570093185 ?level_570093187) 
-			(next ?level_570093185 ?level_570093190) 
-			(stored ?goods_570093188 ?level_570093187)
-	)
-	:effect (and 
-		(not (loaded ?goods_570093188 ?truck_570093186 ?level_570093185)) 
-		(next ?level_570093187 ?level_570093185) 
-		(stored ?goods_570093189 ?level_570093190)
+		(at ?truck_254064487 ?place_254064490) 
+		(not (loaded ?goods_254064488 ?truck_254064489 ?level_254064492)) 
+		(loaded ?goods_254064488 ?truck_254064487 ?level_254064491)
 	)
 )
 

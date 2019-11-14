@@ -13,7 +13,7 @@
  * <http://www.gnu.org/licenses/>
  */
 
-package edu.utd.sc.test;
+package edu.utd.sc.eval.actgenerating;
 
 import java.io.File;
 import java.io.IOException;

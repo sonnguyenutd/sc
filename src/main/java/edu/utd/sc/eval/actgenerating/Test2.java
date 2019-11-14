@@ -1,4 +1,4 @@
-package edu.utd.sc.test;
+package edu.utd.sc.eval.actgenerating;
 
 import java.util.ArrayList;
 import java.util.Arrays;

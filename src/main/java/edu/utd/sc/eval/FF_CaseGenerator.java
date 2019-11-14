@@ -21,9 +21,9 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
-import edu.utd.swsc.common.Parameter;
-import edu.utd.swsc.common.Problem;
-import edu.utd.swsc.common.Service;
+import edu.utd.sc.common.Parameter;
+import edu.utd.sc.common.Problem;
+import edu.utd.sc.common.Service;
 import edu.utd.swsc.utils.Utils;
 import fr.uga.pddl4j.encoding.CodedProblem;
 import fr.uga.pddl4j.heuristics.relaxation.Heuristic;

@@ -1,4 +1,4 @@
-package edu.utd.swsc.common;
+package edu.utd.sc.common;
 
 public class Parameter {
 	static int COUNTER = 1000000;

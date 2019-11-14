@@ -13,7 +13,7 @@
  * <http://www.gnu.org/licenses/>
  */
 
-package edu.utd.sc.test;
+package edu.utd.sc.eval.actgenerating;
 
 import java.io.File;
 import java.io.IOException;
@@ -39,8 +39,8 @@ public class FF_Eval {
 	 private static Logger LOGGER = LogManager.getLogger(StateSpacePlannerFactory.class);
 	 private static boolean ACTION_COST = false;
 	public static void main(String[] args) {
-		File problem = new File("/Users/sonnguyen/Desktop/domains/pfile01-001.pddl");
-		File domain = new File("/Users/sonnguyen/Desktop/domains/tpp.pddl");
+		File problem = new File("domains/pfile01-001.pddl");
+		File domain = new File("domains/tpp.pddl");
 //		File problem = new File("pddl/blocksworld/p15.pddl");
 //		File domain = new File("pddl/blocksworld/domain.pddl");
 		try {

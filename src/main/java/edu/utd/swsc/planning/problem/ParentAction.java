@@ -10,9 +10,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import edu.utd.swsc.common.Clusterer;
-import edu.utd.swsc.common.ParentService;
-import edu.utd.swsc.common.Service;
+import edu.utd.sc.common.Clusterer;
+import edu.utd.sc.common.ParentService;
+import edu.utd.sc.common.Service;
 
 public class ParentAction extends Action {
 	Set<Action> children;

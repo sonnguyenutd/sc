@@ -1,4 +1,4 @@
-package edu.utd.sc.test;
+package edu.utd.sc.eval.actgenerating;
 
 public class Argument {
 	static int counter = 1000000;

@@ -1,4 +1,4 @@
-package edu.utd.swsc.common;
+package edu.utd.sc.common;
 
 import java.io.File;
 import java.util.HashSet;
