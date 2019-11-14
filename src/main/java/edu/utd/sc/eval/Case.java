@@ -5,8 +5,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 import edu.utd.sc.common.Parameter;
-import edu.utd.swsc.planning.problem.PlanProblem;
-import edu.utd.swsc.planning.problem.Prop;
+import edu.utd.sc.graphplan.problem.PlanProblem;
+import edu.utd.sc.graphplan.problem.Prop;
 
 public class Case {
 	static int COUNTER = 1000000;

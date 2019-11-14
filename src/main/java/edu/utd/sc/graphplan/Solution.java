@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import edu.utd.swsc.planning.problem.Action;
-import edu.utd.swsc.planning.problem.NoOpAction;
-import edu.utd.swsc.planning.problem.Prop;
+import edu.utd.sc.graphplan.problem.Action;
+import edu.utd.sc.graphplan.problem.NoOpAction;
+import edu.utd.sc.graphplan.problem.Prop;
 
 public class Solution {
 	public final static Solution FAILURE = new Solution(null);

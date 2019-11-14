@@ -4,8 +4,8 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-import edu.utd.swsc.planning.problem.Action;
-import edu.utd.swsc.planning.problem.Prop;
+import edu.utd.sc.graphplan.problem.Action;
+import edu.utd.sc.graphplan.problem.Prop;
 
 public class ActionLayer extends Layer {
 	private static int COUNTER = 1;

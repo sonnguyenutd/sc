@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import edu.utd.swsc.planning.problem.Action;
-import edu.utd.swsc.planning.problem.ParentAction;
-import edu.utd.swsc.planning.problem.Prop;
+import edu.utd.sc.graphplan.problem.Action;
+import edu.utd.sc.graphplan.problem.ParentAction;
+import edu.utd.sc.graphplan.problem.Prop;
 
 public class ParentService extends Service {
 	static int COUNTER = 1000000;

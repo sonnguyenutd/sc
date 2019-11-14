@@ -2,7 +2,7 @@ package edu.utd.sc.graphplan;
 
 import java.util.Set;
 
-import edu.utd.swsc.planning.problem.Action;
+import edu.utd.sc.graphplan.problem.Action;
 
 public abstract class Layer {
 	int id;

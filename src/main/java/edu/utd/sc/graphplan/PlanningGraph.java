@@ -5,10 +5,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import edu.utd.swsc.planning.problem.Action;
-import edu.utd.swsc.planning.problem.PlanDomain;
-import edu.utd.swsc.planning.problem.PlanProblem;
-import edu.utd.swsc.planning.problem.Prop;
+import edu.utd.sc.graphplan.problem.Action;
+import edu.utd.sc.graphplan.problem.PlanDomain;
+import edu.utd.sc.graphplan.problem.PlanProblem;
+import edu.utd.sc.graphplan.problem.Prop;
 
 public class PlanningGraph {
 	List<Level> levels;

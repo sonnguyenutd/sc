@@ -1,4 +1,4 @@
-package edu.utd.swsc.planning.problem;
+package edu.utd.sc.graphplan.problem;
 
 import java.util.ArrayList;
 import java.util.Collection;

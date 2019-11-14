@@ -16,8 +16,8 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import edu.utd.swsc.planning.problem.Action;
-import edu.utd.swsc.planning.problem.Prop;
+import edu.utd.sc.graphplan.problem.Action;
+import edu.utd.sc.graphplan.problem.Prop;
 import edu.utd.swsc.utils.Utils;
 
 public class Service {

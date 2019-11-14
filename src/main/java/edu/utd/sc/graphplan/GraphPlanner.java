@@ -7,8 +7,8 @@ import java.util.Set;
 import edu.utd.sc.common.Clusterer;
 import edu.utd.sc.common.ParentService;
 import edu.utd.sc.common.Service;
-import edu.utd.swsc.planning.problem.PlanDomain;
-import edu.utd.swsc.planning.problem.PlanProblem;
+import edu.utd.sc.graphplan.problem.PlanDomain;
+import edu.utd.sc.graphplan.problem.PlanProblem;
 
 public class GraphPlanner {
 	public static void main(String[] args) {
